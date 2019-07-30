@@ -1,31 +1,29 @@
 package main
 
 import (
-	"exercism/go/bob"
-	"exercism/go/gigasecond"
-	greeting "exercism/go/hello-world"
 	linkedlist "exercism/go/linked-list"
-	"exercism/go/space-age"
-	twofer "exercism/go/two-fer"
+	"exercism/go/luhn"
 	"fmt"
-	"time"
 )
 
 func main() {
-	// hello world
-	fmt.Println(greeting.HelloWorld())
-	// two fer
-	fmt.Println(twofer.ShareWith("Bob"))
-	// space age
-	fmt.Printf("Age in Jupiter: %f earth years\n", space.Age(1000000000, space.Jupiter))
-	// gigasecond
-	fmt.Printf("now+gigasecond: %s\n ", gigasecond.AddGigasecond(time.Now()))
+	// // hello world
+	// fmt.Println(greeting.HelloWorld())
+	// // two fer
+	// fmt.Println(twofer.ShareWith("Bob"))
+	// // space age
+	// fmt.Printf("Age in Jupiter: %f earth years\n", space.Age(1000000000, space.Jupiter))
+	// // gigasecond
+	// fmt.Printf("now+gigasecond: %s\n ", gigasecond.AddGigasecond(time.Now()))
 
-	// bob
-	fmt.Println(bob.Hey("SCREAMING!"))
+	// // bob
+	// fmt.Println(bob.Hey("SCREAMING!"))
+	// //linked list
+	// linkedList()
 
-	linkedList()
-
+	// luhn
+	cc := "4111 1111 1111 1111"
+	fmt.Printf("is number '%s' valid? - %t\n", cc, luhn.Valid(cc))
 }
 
 func linkedList() {
